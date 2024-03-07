@@ -1,0 +1,318 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+:root {
+  font-size: 62.5%;
+}
+@media screen and (max-width: 768px) {
+  .container {
+    width: 100%;
+  }
+  body {
+    background-color: #efefef;
+  }
+  .container-center {
+    padding: 3rem 10%;
+  }
+  header {
+    background-color: #0067da;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+  }
+  header h1 {
+    font-size: 2.5rem;
+  }
+  .sobreaLoja img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 3rem;
+  }
+  .sobreaLoja h2,
+  .produtos h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2.5rem;
+    color: #0067da;
+    padding-bottom: 1rem;
+    border-bottom: #0067da solid 0.3rem;
+  }
+  .sobreaLoja p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  .produto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+    border-bottom: #fff solid 0.3rem;
+    padding-bottom: 3rem;
+  }
+  .produto img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+  }
+  .produto h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: black;
+  }
+  .produto p {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  .produto button {
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+    background-color: #0067da;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;
+  }
+  .menuHamburguer {
+    width: 2.5rem;
+    cursor: pointer;
+  }
+  .menuHamburguer--line {
+    height: 0.2rem;
+    width: 100%;
+    background-color: #fff;
+    display: block;
+    margin-bottom: 0.4rem;
+  }
+  nav {
+    background-color: #084a96;
+    display: none;
+  }
+  nav ul {
+    padding: 1rem;
+  }
+  nav li {
+    list-style: none;
+    display: flex;
+    margin-right: 4rem;
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 1rem 0;
+  }
+  nav li a {
+    color: #fff;
+    text-decoration: none;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .container {
+    width: 80%;
+    margin: 0 auto;
+  }
+  body {
+    background-color: #efefef;
+  }
+  .container-center {
+    padding: 3rem 10%;
+  }
+  header {
+    background-color: #0067da;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+  }
+  header h1 {
+    font-size: 3.5rem;
+  }
+  .sobreaLoja img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 3rem;
+  }
+  .sobreaLoja h2,
+  .produtos h2 {
+    font-size: 3.5rem;
+    margin-bottom: 2.5rem;
+    color: #0067da;
+    padding-bottom: 1rem;
+    border-bottom: #0067da solid 0.3rem;
+    grid-column: 1 / -1;
+  }
+  .produtos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5%;
+  }
+  .sobreaLoja p {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+  .produto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+    border-bottom: #fff solid 0.3rem;
+    padding-bottom: 3rem;
+  }
+  .produto img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+  }
+  .produto h3 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: black;
+  }
+  .produto p {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  .produto button {
+    padding: 1rem 2rem;
+    font-size: 2rem;
+    background-color: #0067da;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;
+  }
+  .menuHamburguer {
+    display: none;
+  }
+  #subMenu {
+    display: none;
+  }
+  #principal ul {
+    display: flex;
+  }
+  #principal ul li {
+    list-style: none;
+  }
+  #principal ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+  #principal ul li:first-child {
+    margin-right: 5rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .container {
+    width: 80%;
+    margin: 0 auto;
+  }
+  body {
+    background-color: #efefef;
+  }
+  .container-center {
+    padding: 3rem 10%;
+  }
+  header {
+    background-color: #0067da;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem 10%;
+  }
+  header h1 {
+    font-size: 3.5rem;
+  }
+  #subMenu {
+    display: none;
+  }
+  #principal ul {
+    display: flex;
+  }
+  #principal ul li {
+    list-style: none;
+  }
+  #principal ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+  #principal ul li:first-child {
+    margin-right: 5rem;
+  }
+  .sobreaLoja {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 5%;
+    margin-bottom: 4rem;
+  }
+  .sobreaLoja img {
+    border-radius: 8px;
+    max-width: 100%;
+  }
+  .produtos h2,
+  .sobreaLoja h2 {
+    font-size: 3.5rem;
+    margin-bottom: 2.5rem;
+    color: #0067da;
+    padding-bottom: 1rem;
+    border-bottom: #0067da solid 0.3rem;
+    grid-column: 1 / -1;
+  }
+  .produtos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5%;
+  }
+  .sobreaLoja p {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+  .produto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+    border-bottom: #fff solid 0.3rem;
+    padding-bottom: 3rem;
+  }
+  .produto img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+  }
+  .produto h3 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: black;
+  }
+  .produto p {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  .produto button {
+    padding: 1rem 2rem;
+    font-size: 2rem;
+    background-color: #0067da;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;
+  }
+  .menuHamburguer {
+    display: none;
+  }
+}
